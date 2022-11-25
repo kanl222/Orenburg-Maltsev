@@ -32,7 +32,7 @@ class MyWidget(QMainWindow):
         red = 255
         green = 255
         blue = 0
-        x,y = self.coords[0] - a ,self.coords[1] - a
+        x,y = self.coords[0] - a//2 ,self.coords[1] - a//2
         self.qp.setPen(QPen(QColor(red, green, blue)))
         self.qp.setBrush(QBrush(QColor(red, green, blue)))
         self.qp.drawEllipse(x,y, a, a)
